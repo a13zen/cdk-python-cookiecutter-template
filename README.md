@@ -3,25 +3,11 @@
 ## Introduction
 Simple Cookie Cutter Template for a Python CDK application that includes common commit hook configurations including conventional commit. 
 
-## Prerequisites
-- [CDKv2](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
-- [AWS CLIv2]()
-- [Configure AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+## How to use
 
-## Description
-<ADD PROJECT SUMMARY>
-
-## Architecture
-For detailed architecture breakdown, please see the [Architecture Guide](./docs/architecture-guide.md)
-
-![SampleArchitecture](./docs/images/architecture.png)
-
-## Developer Guide (Build/Test/Deploy)
-For more details on how to use this project, CDK and supporting tools, please see the [Detailed Developer Guide](./docs/developer-guide.md)
-
-## Getting Started
+1. [Install Cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html)
+2. Initialize a project from the template: 
 
 ```bash
-
-
+cookiecutter https://github.com/a13zen/cdk-python-cookiecutter-template
 ```
