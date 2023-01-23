@@ -1,0 +1,14 @@
+{
+    "project_name": "cdk-py-app",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "pkg_name": "{{ cookiecutter.project_slug|replace('-', '_') }}",
+    "stack_name": "{{ cookiecutter.project_name|replace(' ', '') }}",
+    "project_description": null,
+    "version": "0.0.1",
+    "python_version": "3.9.12",
+    "node_version": "18.13.0",
+    "cdk_version": "2.61.1",
+    "constructs_version": "10.1.224",
+    "empty_codecommit_repo_https_grc_clone_url": null,
+    "default_aws_region": "eu-west-1"
+  }
