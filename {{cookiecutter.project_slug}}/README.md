@@ -16,9 +16,11 @@
 To get started, please follow the [Bootstrapping Guide](./docs/bootstrapping-guide.md)
 
 ## Developer Guide (Build/Test/Deploy)
+
 For more details on how to use this project, CDK and supporting tools, please see the [Detailed Developer Guide](./docs/developer-guide.md)
 
 ## Architecture
+
 For detailed architecture breakdown, please see the [Architecture Guide](./docs/architecture-guide.md)
 
 ![SampleArchitecture](./docs/images/architecture.png)

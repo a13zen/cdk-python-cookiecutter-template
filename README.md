@@ -1,7 +1,7 @@
-# {{cookiecutter.project_name}}
+# CDK Python Application Cookiecutter Template
 
 ## Introduction
-{{cookiecutter.project_description}}
+Simple Cookie Cutter Template for a Python CDK application that includes common commit hook configurations including conventional commit. 
 
 ## Prerequisites
 - [CDKv2](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
