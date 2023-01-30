@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 echo "⭐ Setup git "
 git init
-git remote add origin "d"
+git remote add origin "{{cookiecutter.git_repo_url}}"
 
 echo "⭐ Installing pre-commit hook "
 echo "NOTE: This requires sudo to run 'git defender --setup'"

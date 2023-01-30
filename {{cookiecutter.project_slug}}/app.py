@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+
 import aws_cdk as cdk
 import cdk_nag
 
@@ -11,6 +12,7 @@ app_stack = CdkStack(
     app,
     "CdkStack",
     env=cdk.Environment(account=os.getenv("CDK_DEFAULT_ACCOUNT"), region=os.getenv("CDK_DEFAULT_REGION")),
+    stage=os.getenv("STAGE", "dev"),
 )
 
 # Runs CDK Nag on Stack

@@ -17,23 +17,33 @@ repos:
     rev: "22.12.0"
     hooks:
       - id: black
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        args:
+          # https://flake8.pycqa.org/en/latest/user/error-codes.html
+          - "--ignore=E501,W503,E203,E712"
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        args: ["--profile", "black", "--filter-files"]
+  - repo: https://github.com/pypa/pip-audit
+    rev: v2.4.4
+    hooks:
+    - id: pip-audit
+      args: ["-r", "requirements.txt", "--ignore-vuln", "PYSEC-2022-237"]
+  - repo: https://github.com/awslabs/git-secrets
+    rev: 99d01d5
+    hooks:
+      - id: git-secrets
+        name: Git Secrets
   - repo: https://github.com/detailyang/pre-commit-shell
     rev: v1.0.6
     hooks:
       - id: shell-lint
-  - repo: https://github.com/pre-commit/mirrors-isort
-    rev: v5.10.1
-    hooks:
-      - id: isort
-        files: ^source/
-        types: [file, python]
-  - repo: https://github.com/PyCQA/bandit
-    rev: "1.7.1"
-    hooks:
-      - id: bandit
-        entry: bandit
-        exclude: ^tests/
-        verbose: true
+
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v2.39.1
     hooks:
