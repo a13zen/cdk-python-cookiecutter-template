@@ -11,5 +11,5 @@
   "cdk_version": "2.61.1",
   "constructs_version": "10.1.224",
   "git_repo_url": null,
-  "default_aws_region": "eu-west-1"
+  "default_aws_region": "eu-central-1"
 }
